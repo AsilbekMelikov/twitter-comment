@@ -23,13 +23,13 @@
     color: #aeaeae;
 }
 .app-list-item .fa-heart {
-    margin-left: 5px;
     transition: 0.5s all;
 }
 .app-list-item .heart-second {
-    transform: translateX(30px);
+    transform: translateX(10px);
     transition: 0.3s all;
     opacity: 0;
+    font-size: 1.1rem;
 }
 .app-list-item-label {
     display: block;
@@ -42,9 +42,10 @@
     opacity: 0;
 }
 .app-list-item.like .heart-second {
+    cursor: pointer;
     opacity: 1;
     color: red;
-    transform: translateX(-22px);
+    transform: translateX(-30px);
 }
 .app-list-item.important .app-list-item-label {
     color: #FFD700;

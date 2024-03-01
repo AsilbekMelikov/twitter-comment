@@ -22,12 +22,15 @@ const PostListItem = (props) => {
                     <button type='button' className='btn-star btn-sm' onClick={onToggleImportant}>
                         <i className='fa fa-star'></i>
                     </button>
-                    <button type='button' onClick={onDelete} className='btn-trash btn-sm'>
+                    <button type='button' onClick={onDelete}
+                            className='btn-trash d-flex justify-content-center align-items-center '>
                         <i className="fa-solid fa-trash"></i>
                     </button>
-                    <button type='button' className='btn-sm btn-heart d-flex align-items-center' onClick={onToggleLiked}>
-                        <i className='fa fa-heart'></i><i className='fa fa-heart heart-second'></i>
+                    <button type='button' className='btn-sm btn-heart d-flex justify-content-center align-items-center'
+                            onClick={onToggleLiked}>
+                        <i className='fa fa-heart'></i>
                     </button>
+                    <i className='fa fa-heart heart-second' onClick={onToggleLiked}></i>
                 </div>
             </div>
         )

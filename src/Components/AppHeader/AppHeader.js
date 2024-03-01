@@ -2,7 +2,7 @@ import './AppHeader.css'
 const AppHeader = ({allPosts,likes}) => {
 
     return (
-        <div className='app-header d-flex'>
+        <div className='app-header d-flex align-items-center'>
             <h1>Comments on Twitter</h1>
             <h2>
                 {allPosts === 0 ? 'No posts, ' : (allPosts === 1 ? `${allPosts} post, ` : `${allPosts} posts, `)}
