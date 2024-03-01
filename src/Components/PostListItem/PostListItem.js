@@ -19,11 +19,11 @@ const PostListItem = (props) => {
                     {label}
                 </span>
                 <div className='d-flex justify-content-center align-items-center'>
-                    <button type='button' className='btn-star btn-sm' onClick={onToggleImportant}>
+                    <button type='button' className='btn-star btn-sm d-flex justify-content-center align-items-center' onClick={onToggleImportant}>
                         <i className='fa fa-star'></i>
                     </button>
                     <button type='button' onClick={onDelete}
-                            className='btn-trash d-flex justify-content-center align-items-center '>
+                            className='btn-trash d-flex justify-content-center align-items-center'>
                         <i className="fa-solid fa-trash"></i>
                     </button>
                     <button type='button' className='btn-sm btn-heart d-flex justify-content-center align-items-center'
